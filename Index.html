@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kawaii To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Parte 1: To-Do List -->
+    <div class="todo-section">
+      <h2>✨ My To-Do List ✨</h2>
+      <input type="text" id="new-task" placeholder="Add a new task...">
+      <div class="list-container">
+        <ul id="task-list"></ul>
+      </div>
+    </div>
+    
+    <!-- Parte 2: Cronômetro Pomodoro -->
+    <div class="pomodoro-section">
+      <h2>⏰ Pomodoro Timer ⏰</h2>
+      <div id="timer">25:00</div>
+      <button id="start">Start</button>
+      <button id="pause">Pause</button>
+      <button id="reset">Reset</button>
+    </div>
+    
+    <!-- Parte 3: Tarefas Concluídas -->
+    <div class="completed-section">
+      <h2>✔️ Completed Tasks</h2>
+      <div class="list-container">
+        <ul id="completed-tasks-list"></ul>
+      </div>
+    </div>
+    
+    <!-- Parte 4: Estatísticas -->
+    <div class="stats-section">
+      <h2>📊 Stats 📊</h2>
+      <p>Completed Tasks: <span id="completed-tasks-count">0</span></p>
+      <p>Total Work Time: <span id="total-time">0 min</span></p>
+      <p>Pomodoro Cycles: <span id="pomodoro-cycles">0</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

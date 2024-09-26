@@ -1,0 +1,109 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f3f5;
+    color: #6a4c93;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff7fa;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    height: 90vh;
+    max-height: 90vh;
+    box-sizing: border-box;
+  }
+  
+  .todo-section, .pomodoro-section, .stats-section, .completed-section {
+    padding: 20px;
+    background-color: #fffbf7;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-container {
+    height: 200px; /* Altura fixa */
+    overflow-y: scroll; /* Forçar barra de rolagem vertical */
+    overflow-x: hidden; /* Garantir que não haja rolagem horizontal */
+    border: 1px solid #fadadd;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    padding: 8px;
+    background-color: #ffe5f1;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li.done {
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+  
+  button {
+    padding: 8px; /* Mantém o tamanho menor */
+    border-radius: 10px;
+    border: none;
+    background-color: #f8a1d1;
+    color: white;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size: 0.9rem;  /* Tamanho do texto igual ao dos outros elementos */
+  }
+  
+  button:hover {
+    background-color: #f38181;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid #fadadd;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  #timer {
+    font-size: 1.5rem;
+  }
+  
+  .pomodoro-buttons {
+    display: flex;
+    justify-content: center; /* Alinha os botões horizontalmente */
+  }
+  
+  .pomodoro-buttons button {
+    padding: 8px 15px; /* Tamanho menor para os botões */
+    font-size: 0.9rem; /* Mesmo tamanho do texto */
+    margin: 0 5px; /* Espaço entre os botões */
+  }
+  

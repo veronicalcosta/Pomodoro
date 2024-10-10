@@ -70,8 +70,7 @@ body {
     background-color: #f8a1d1;
     color: white;
     cursor: pointer;
-    margin-right: 10px;
-    font-size: 0.9rem;  /* Tamanho do texto igual ao dos outros elementos */
+    font-size: 0.9rem; /* Tamanho do texto igual ao dos outros elementos */
   }
   
   button:hover {
@@ -98,12 +97,14 @@ body {
   
   .pomodoro-buttons {
     display: flex;
-    justify-content: center; /* Alinha os botões horizontalmente */
+    justify-content: space-between; /* Alinha os botões lado a lado */
+    margin-top: 10px; /* Adiciona um espaço acima dos botões */
   }
   
   .pomodoro-buttons button {
-    padding: 8px 15px; /* Tamanho menor para os botões */
+    padding: 8px 10px; /* Tamanho menor para os botões */
     font-size: 0.9rem; /* Mesmo tamanho do texto */
+    flex: 1; /* Faz com que os botões ocupem o mesmo espaço */
     margin: 0 5px; /* Espaço entre os botões */
   }
   
